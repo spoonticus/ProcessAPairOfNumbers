@@ -1,0 +1,76 @@
+ECHO is on.
+Completion Activity: Process a Pair of Numbers
+
+INPUTS
+
+user input two numbers accept J,Q,K, and A
+
+PROCESSING STEPS
+
+show welcome message
+Repeat the steps unless the user type in 00
+if the two numbers are integers
+	add number1 and number2
+	else if number1 or/and number2 J,Q,K, 
+		J,Q,K, are value 10
+		add number1 and number2
+		else if number1 or/and number2 A
+		request userInput 1 or 10
+		A is valued according to userInput
+		add number1 and number2
+	
+if the sum is 21
+	add * to output
+OUTPUTS
+
+print 
+	sumNumber
+	Goodbye
+	
+-------------------------------------------------------------------
+
+PSEUDOCODE 
+
+print
+	"Welcome!"
+	REPEAT
+userInput number1
+if number1 is J,Q, or K
+		number1 is 10
+	else if number1 is A
+		print 
+			"please choose the value of A (1 or 11): "
+			userInput number1
+			if number1 is not 1 or 11
+				print
+					"Goodbye"
+					END
+			else number1 is 1 or 11
+	
+userInput number2
+	if number2 is J,Q, or K
+		number2 is 10
+	else if number2 is A
+		print 
+			"please choose the value of A (1 or 11): "
+			userInput number2
+			if number2 is not 1 or 11
+				print
+					"Goodbye"
+					END
+			else number2 is 1 or 11
+
+sumNumber = number1 + number2
+	if sumNumber is 21
+		print 
+			"21*"
+			"Goodbye"
+			END
+	else 
+		print
+			sumNumber
+			"Goodbye"
+
+UNTIL number1 and number2 are 0			
+
+END
